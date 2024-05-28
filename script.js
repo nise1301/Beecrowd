@@ -1,5 +1,5 @@
-//Beecrowd 1181 em javascript
-/*
+/*// 1181 Beecrowd
+
 // Inicializa uma matriz vazia
 var matriz = []
 
@@ -40,8 +40,7 @@ if(operacao=='M'){
     console.log((soma/12).toFixed(1))
 }*/
 
-/*
-//problema 1182 do Beecrowd
+/*// 1182 Beecrowd
 
 //inicializa matriz vazia
 var matriz = []
@@ -84,7 +83,7 @@ if(operacao=='M'){
     console.log((soma/12).toFixed(1))
 }*/
 
-//1183 Beecrowd
+/*// 1183 Beecrowd
 
 var matriz = []
 var soma = 0.0
@@ -121,4 +120,42 @@ if(operacao=='M'){
     // dos números no contador, que acumulou os elementos acima
     // da diagonal principal
     console.log((soma/contador).toFixed(1))
+}*/
+/* //1184 Beecrowd
+
+var matriz = []
+var soma = 0.0
+var contador = 0
+var operacao = lines.shift()
+// Inicia um loop que vai de 0 a 11 (inclusive).
+// Cada valor de 'i' representa uma linha na matriz.
+for( let i = 0; i<12 ;i++){
+    //Inicializa a linha 'i' da matriz como um array vazio.
+    matriz [i] = []
+    //Inicia um segundo loop dentro do primeiro. 
+    //Cada valor de 'j' representa uma coluna na matriz.
+    for(let j =0 ;j<12; j++){
+        //Pega o próximo valor de 'lines', converte para um número decimal
+        // e atribui à posição [i][j] da matriz.
+         matriz[i][j] = parseFloat(lines.shift())
+         //Verifica se estamos em uma posição abaixo da diagonal principal da matriz
+         // (ou seja, se a coluna 'j' é menor que a linha 'i').
+         if(j<i){
+            //Se estivermos acima da diagonal principal,
+            // adiciona o valor na posição [i][j] à variável 'sum'.
+            soma += matriz[i][j]
+            //Também incrementa a variável 'count', que está contando
+            // quantos números estão acima da diagonal principal.
+            contador++
+         }
+    }
 }
+if(operacao=='S'){
+    console.log(soma.toFixed(1))
+}
+if(operacao=='M'){
+    //se a operação for média, precisamos dividir a soma pelo conjunto
+    // dos números no contador, que acumulou os elementos acima
+    // da diagonal principal
+    console.log((soma/contador).toFixed(1))
+}*/
