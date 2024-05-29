@@ -121,6 +121,7 @@ if(operacao=='M'){
     // da diagonal principal
     console.log((soma/contador).toFixed(1))
 }*/
+
 /* //1184 Beecrowd
 
 var matriz = []
@@ -159,3 +160,34 @@ if(operacao=='M'){
     // da diagonal principal
     console.log((soma/contador).toFixed(1))
 }*/
+
+// 1185 Beecrowd
+//Aqui tem uma variavel para iniciar uma matriz vazia, para guardar a operação escolhida pelo juiz virtual
+//outra para guardar a soma dos elementos da matriz e outra para inciar o contador que permitirá chegar a média
+var matriz = []
+var operation = lines.shift()
+var soma = 0.0
+var contador = 0
+
+//o primeiro laço cria vários arrays dentro da matriz 12x12 
+//o segundo laço vai preencher esses espaços colocando o valor escolhido pelo juiz vitual na linha i e coluna j respectiva a cada iteração do laço
+for(let i = 0; i<12; i++){
+    matriz[i] = []
+    for(let j = 0; j<12; j++){
+        matriz[i][j] = parseFloat(lines.shift())
+        //se o indice da coluna j for menor que a ultima posição (0 a 11 são 12 posições) menos o indice da linha
+        //significa que eu ainda tenho espaço antes de cehgar a diagonal secundária, então guardo os valores de i e j na matriz na variavel soma
+        if(j<11-i){
+            soma+=matriz[i][j]
+            //sinalmente, incremento o contador, pois assim vou saber quantas vezes esse código foi repetido e logo por quanto eu preciso dividir  soma para chegar na média
+            contador++
+        }
+    }
+}
+//No resto desse código, o juiz virtual escolhe se quer realizar uma soma ou tirar a média
+if(operation=='S'){
+    console.log(soma)
+}
+if(operation = 'M'){
+    console.log((soma/contador).toFixed)
+}
