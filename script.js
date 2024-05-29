@@ -240,3 +240,27 @@ if(operacao=='S'){
 if(operacao=='M'){
     console.log((soma/contador).toFixed(1))
 }*/
+
+/*//1188 Beecrowd
+
+var matriz = []
+var soma= 0.0
+var contador = 0
+var operacao = lines.shift()
+
+for(let i = 0; i<12; i++){
+    matriz[i] = []
+    for(let j = 0; j<12; j++){
+        matriz[i][j] = parseFloat(lines.shift())
+        if(i>j&&i+j>11){
+            soma+=matriz[i][j]
+            contador++
+        }
+    }
+}
+if(operacao=='S'){
+    console.log(soma)
+}
+if(operacao=='M'){
+    console.log((soma/contador).toFixed)
+}*/
