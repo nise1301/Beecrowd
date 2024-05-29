@@ -161,7 +161,8 @@ if(operacao=='M'){
     console.log((soma/contador).toFixed(1))
 }*/
 
-// 1185 Beecrowd
+/*// 1185 Beecrowd
+
 //Aqui tem uma variavel para iniciar uma matriz vazia, para guardar a operação escolhida pelo juiz virtual
 //outra para guardar a soma dos elementos da matriz e outra para inciar o contador que permitirá chegar a média
 var matriz = []
@@ -190,4 +191,28 @@ if(operation=='S'){
 }
 if(operation = 'M'){
     console.log((soma/contador).toFixed)
+}*/
+
+/*//1186
+
+var matriz = []
+var soma = 0.0
+var contador = 0
+var operacao =lines.shift()
+
+for(let i = 0; i<12; i++){
+    matriz[i] = []
+    for(let j = 0; j<12; j++){
+        matriz[i][j] = parseFloat(lines.shift())
+        if(j>11-i){
+            soma+=matriz[i][j]
+            contador++
+        }
+    }
 }
+if(operacao=='S'){
+    console.log(soma)
+}
+if(operacao=='M'){
+    console.log((soma/contador).toFixed)
+}*/
