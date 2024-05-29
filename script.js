@@ -193,7 +193,7 @@ if(operation = 'M'){
     console.log((soma/contador).toFixed)
 }*/
 
-/*//1186
+/*//1186 Beecrowd
 
 var matriz = []
 var soma = 0.0
@@ -215,4 +215,28 @@ if(operacao=='S'){
 }
 if(operacao=='M'){
     console.log((soma/contador).toFixed)
+}*/
+
+/*//1187 Beecrowd
+
+var matriz = []
+var soma = 0.0
+var contador= 0
+var operacao= lines.shift()
+
+for(let i = 0; i<12 ; i++){
+    matriz[i]=[]
+    for(let j = 0; j<12; j++){
+        matriz[i][j]=parseFloat(lines.shift())
+        if(j>i&&j<11-i){
+            soma += matriz[i][j]
+            contador++
+        }
+    }
+}
+if(operacao=='S'){
+    console.log(soma)
+}
+if(operacao=='M'){
+    console.log((soma/contador).toFixed(1))
 }*/
