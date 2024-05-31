@@ -28,9 +28,52 @@ for(let i=0; i<100; i++){
     }
 }*/
 
-//1175
+/*//1175
+var N = new Array(20)
 
+for(let i = 0; i<20; i++){
+    N[i] = parseInt(lines.shift())
+}
+for(let i =0; i<10; i++){
+    let aux = N[i]
+    N[i]= N[19-i]
+    N[19-i]= aux
 
+}
+for(let i = 0; i<20; i++){
+    console.log(`N[${i}] = ${N[i]}`)
+}*/
+
+/*//1176
+
+function fibonacci(N){
+    let fib =[]
+    fib[0]= 0
+    fib[1]= 1
+
+    for(let i = 2; i<=N; i++){
+        fib[i] = fib[i-1]+ fib[i-2]
+    }
+    return fib [N]
+}
+
+let T = parseInt(lines.shift())
+
+for(let i =0; i<T; i++){
+    var N = parseInt(lines.shift())
+    console.log(`Fib(${N}) = ${fibonacci(N)}`)
+}*/
+
+//1177
+
+var N = new Array(1000)
+var T = parseInt(lines.shift())
+
+for(let i = 0; i<1000; i++){
+    let resto = i%T
+    N[i]= resto
+    console.log(`N[${i}] = ${resto}`)
+}
 
 
 /*// 1181 Beecrowd
