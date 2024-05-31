@@ -1,3 +1,38 @@
+/*//1172
+var X = []
+for( let i = 0; i<10; i++){
+    X[i] = parseInt(lines.shift())
+    if(X[i]<=0){
+        X[i] = 1
+    }
+    console.log(`X[${i}] = ${X[i]}`)
+}*/
+
+/*//1173
+var N = []
+N[0]= parseInt(lines.shift())
+for( let i = 0; i<10; i++){
+    if(i!=0){
+        N[i] = N[i-1]*2
+    }
+    console.log(`N[${i}] = ${N[i]}`)
+}*/
+
+/*//1174
+var A = []
+
+for(let i=0; i<100; i++){
+    A[i] = parseFloat(lines.shift())
+    if(A[i]<=10){
+        console.log(`A[${i}] = ${A[i].toFixed(1)}`)
+    }
+}*/
+
+//1175
+
+
+
+
 /*// 1181 Beecrowd
 
 // Inicializa uma matriz vazia
@@ -264,3 +299,4 @@ if(operacao=='S'){
 if(operacao=='M'){
     console.log((soma/contador).toFixed)
 }*/
+
