@@ -64,7 +64,7 @@ for(let i =0; i<T; i++){
     console.log(`Fib(${N}) = ${fibonacci(N)}`)
 }*/
 
-//1177
+/*//1177
 
 var N = new Array(1000)
 var T = parseInt(lines.shift())
@@ -73,8 +73,31 @@ for(let i = 0; i<1000; i++){
     let resto = i%T
     N[i]= resto
     console.log(`N[${i}] = ${resto}`)
+}*/
+
+/*//2310 Beecrowd
+
+var N = parseInt(prompt("Digite o número de jogadores"))
+var tentativaSaque=0, tentativaBloqueio = 0, tentativaAtaque = 0
+var acertoSaque = 0, acertoBloqueio = 0, acertoAtaque = 0
+
+for(i=0; i<N; i++){
+    let nome = prompt("Digite o nome do jogador")
+    let [S,B,A] = prompt("Digite as tentativas de Saque, Bloqueio e Ataque").split(" ").map(Number)
+    let [S1,B1,A1] = prompt("Digite os acertos de Saque, Bloqueio e Ataque").split(" ").map(Number)
+
+    tentativaSaque+=S
+    tentativaBloqueio+=B
+    tentativaAtaque+=A
+
+    acertoSaque+=S1
+    acertoBloqueio+=B1
+    acertoAtaque+=A1
 }
 
+console.log(`Pontos de Saque: ${((acertoSaque/tentativaSaque)*100).toFixed(2)}%`)
+console.log(`Pontos de Bloqueio: ${((acertoBloqueio/tentativaBloqueio)*100).toFixed(2)}%`)
+console.log(`Pontos de Ataque: ${((acertoAtaque/tentativaAtaque)*100).toFixed(2)}%`)*/
 
 /*// 1181 Beecrowd
 
